@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D6FF0"/>
+      <stop offset="100%" stop-color="#1D55D4"/>
+    </linearGradient>
+    <linearGradient id="deviceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8EFF8"/>
+    </linearGradient>
+    <linearGradient id="deviceTopGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0F5FF"/>
+      <stop offset="100%" stop-color="#DDE8F8"/>
+    </linearGradient>
+    <linearGradient id="discGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BFDBFE"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: brand blue -->
+  <rect width="1024" height="1024" rx="220" ry="220" fill="url(#bgGrad)"/>
+
+  <!-- Outer arc — white, low opacity -->
+  <path d="M 192 570 A 336 336 0 0 1 832 570"
+    fill="none" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Inner arc — white, strong -->
+  <path d="M 272 570 A 252 252 0 0 1 752 570"
+    fill="none" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round" opacity="0.90"/>
+
+  <!-- Cyan dot glow -->
+  <circle cx="512" cy="508" r="56" fill="#22D3EE" opacity="0.30"/>
+  <circle cx="512" cy="508" r="40" fill="#22D3EE" opacity="0.40"/>
+  <!-- Core dot -->
+  <circle cx="512" cy="508" r="30" fill="#22D3EE"/>
+  <!-- Specular -->
+  <circle cx="500" cy="497" r="10" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- Device top face -->
+  <rect x="264" y="606" width="496" height="32" rx="10" fill="url(#deviceTopGrad)"/>
+
+  <!-- Device main body -->
+  <rect x="264" y="630" width="496" height="152" rx="24" fill="url(#deviceGrad)"/>
+
+  <!-- Top highlight strip -->
+  <rect x="264" y="630" width="496" height="14" rx="10" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Disc shadow -->
+  <ellipse cx="512" cy="638" rx="76" ry="14" fill="#2563EB" opacity="0.18"/>
+  <!-- Disc body -->
+  <ellipse cx="512" cy="630" rx="72" ry="16" fill="url(#discGrad)"/>
+  <!-- Disc top highlight -->
+  <ellipse cx="512" cy="626" rx="62" ry="11" fill="#DBEAFE" opacity="0.7"/>
+  <!-- Disc rim -->
+  <ellipse cx="512" cy="630" rx="76" ry="18" fill="none" stroke="#93C5FD" stroke-width="2" opacity="0.6"/>
+
+  <!-- Vent grille -->
+  <rect x="634" y="662" width="60" height="6" rx="3" fill="#94A3B8" opacity="0.55"/>
+  <rect x="634" y="675" width="60" height="6" rx="3" fill="#94A3B8" opacity="0.55"/>
+  <rect x="634" y="688" width="60" height="6" rx="3" fill="#94A3B8" opacity="0.55"/>
+  <rect x="634" y="701" width="60" height="6" rx="3" fill="#94A3B8" opacity="0.55"/>
+
+  <!-- Status LED glow -->
+  <circle cx="312" cy="706" r="16" fill="#22D3EE" opacity="0.30"/>
+  <!-- LED core -->
+  <circle cx="312" cy="706" r="8" fill="#22D3EE"/>
+  <!-- LED specular -->
+  <circle cx="309" cy="703" r="3" fill="#FFFFFF" opacity="0.65"/>
+</svg>
